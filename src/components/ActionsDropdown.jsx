@@ -1,5 +1,4 @@
 import Popover from "react-bootstrap/Popover";
-import Button from "react-bootstrap/Button";
 
 const ActionsDropdown = (
   <Popover id="popover-basic" className="popover-bg w-[12vw]">
