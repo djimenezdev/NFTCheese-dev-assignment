@@ -6,16 +6,8 @@ import { HiOutlineSelector } from "react-icons/hi";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import ActionsDropdown from "./ActionsDropdown";
 
-// store table data in a piece of state --DONE
-// create function that gets executed to update  state with 25 more items
-// put in check to disable button if reached all 1000 items
-// when user clicks column to sort, clear state and get 25 items with new sort
-// also make sure to set piece of state for sort type -- DONE
-
 const TransactionTable = () => {
   const [tableD, setTableD] = useState([]);
-  const [sortType, setSortType] = useState(null);
-  const [show, setShow] = useState(0);
   const [order, setOrder] = useState("asc");
 
   useEffect(() => {
