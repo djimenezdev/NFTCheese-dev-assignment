@@ -35,7 +35,7 @@ const TransactionTable = () => {
     setTimeout(async () => {
       setTableD([]);
       const tableData = await fetch(
-        `https://nftcheese-dev-api.herokuapp.com/?type=${type}&order=${orderType}&start=0&end=25`
+        `https://nftcheese-dev-api.herokuapp.com/?type=${type}&order=${orderType}&start=0&end=${tableD.length}`
       )
         .then((res) => res.json())
         .catch((err) => console.warn(err.message));
